@@ -8,7 +8,6 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 echo '
-[all]
 initial_turbo=30
 disable_splash=1
 dtoverlay=disable-bt
