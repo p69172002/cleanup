@@ -23,9 +23,11 @@ systemctl disable triggerhappy
 systemctl disable systemd-timesyncd
 systemctl disable polkit
 systemctl disable ModemManager
+systemctl disable avahi-daemon
 systemctl disable dphys-swapfile
 systemctl disable keyboard-setup
 systemctl disable apt-daily
 systemctl disable raspi-config
 timedatectl set-ntp false
 apt-get remove bluez bluez-firmware pi-bluetooth pigpio
+journalctl --vacuum-size=1G --vacuum-time=3d --vacuum-files=5
