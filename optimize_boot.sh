@@ -17,7 +17,7 @@ boot_delay=0
 dtparam=audio=off
 ' >> /boot/config.txt
 
-sed -i '1s/$/ loglevel=3 quiet logo.nologo consoleblank=0 fastboot/' /boot/cmdline.txt
+sed -i '1s/$/ isolcpus=3 loglevel=3 quiet logo.nologo consoleblank=0 fastboot/' /boot/cmdline.txt
 
 systemctl disable triggerhappy
 systemctl disable systemd-timesyncd
