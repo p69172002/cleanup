@@ -1,7 +1,7 @@
 #!/bin/sh
 #This script reduces boot times from 6s+ to less than 2s on the RPi4B
 #Wi-Fi and network settings will NOT be touched!
-#Only run this script once!
+#Only script after having setup up your stuff!
 
 if [ "$(id -u)" -ne 0 ]; then
     echo "This script must be run as root or using sudo" 
