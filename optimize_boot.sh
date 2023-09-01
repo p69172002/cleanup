@@ -1,5 +1,5 @@
 #!/bin/sh
-#This script reduces boot times from 6s+ to less than 2s on the RPi4B
+#This script reduces boot times from 6s+ to less than 3s on the RPi4B
 #Wi-Fi and network settings will NOT be touched!
 
 if [ "$(id -u)" -ne 0 ]; then
